@@ -81,8 +81,7 @@ export function handleSignUp(userName, password, confirm) {
     else if( userName && confirm && password)
     alert(`Người dùng đã gửi request đăng ký tài khoản mới\n
         Tên đăng nhập: ${userName}\n
-        Mật khẩu: ${password}\n
-        Xác nhận: ${confirm}`);
+        Mật khẩu: ${password}`);
   }
 
   
