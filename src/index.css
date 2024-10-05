@@ -176,6 +176,8 @@ input::placeholder {
   background: rgba(255, 255, 255, 0.76);
   flex-direction: column;
   font-family:'Goldman', sans-serif; 
+
+ 
   
   
 }
@@ -185,6 +187,8 @@ input::placeholder {
   line-height: 48px;
   color: #45497B;
 
+  text-align: center;
+  max-width: 80%;
 
 
 }
@@ -203,7 +207,8 @@ code {
   font-size:  20px;
   line-height: 24px;
   color: #AEAEAE;
-  ;
+  max-width: 80%;
+  text-align: center;
 
 }
 
