@@ -79,9 +79,24 @@ export function handleSignUp(userName, password, confirm) {
           }, 1800);
     }
     else if( userName && confirm && password)
-    alert(`Người dùng đã gửi request đăng ký tài khoản mới\n
+    {
+      console.log(`Người dùng đã gửi request đăng ký tài khoản mới\n
         Tên đăng nhập: ${userName}\n
         Mật khẩu: ${password}`);
+
+        const meme = document.querySelector('.JS_SIGN_UP')
+        meme.classList.remove('hide')
+            
+        setTimeout(() => {
+            meme.classList.add('hide');
+        }, 2000);
+
+        setTimeout(() => {
+          window.location.reload();
+      }, 1900);
+        
+
+    }
   }
 
   

@@ -172,52 +172,6 @@ input::placeholder {
 }
 
 
-.back {
-  background: rgba(255, 255, 255, 0.76);
-  flex-direction: column;
-  font-family:'Goldman', sans-serif; 
-
- 
-  
-  
-}
-
-.desc1 {
-  font-size:  40px;
-  line-height: 48px;
-  color: #45497B;
-
-  text-align: center;
-  max-width: 80%;
-
-
-}
-
-code {
-  font-size:  40px;
-  line-height: 48px;
-  background: linear-gradient(95.02deg, #BC4CCA 62.46%, #5BADFF 114.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family:'Goldman', sans-serif; 
-  
-  
-}
-.desc2 {
-  font-size:  20px;
-  line-height: 24px;
-  color: #AEAEAE;
-  max-width: 80%;
-  text-align: center;
-
-}
-
-
-.logo_back {
-  width: 52%
-  
-
-}
 
 
 

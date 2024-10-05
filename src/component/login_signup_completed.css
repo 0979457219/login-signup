@@ -1,0 +1,38 @@
+.message_completed {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 100% !important;
+
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+
+    
+}
+
+.message_popup {
+    animation: modalABC ease 0.4s;
+
+    
+}
+
+.message_img {
+    height: 250px;
+    
+
+}
+
+@keyframes modalABC{
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }

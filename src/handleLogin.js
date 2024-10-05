@@ -39,8 +39,22 @@ export function handleLogin(userName, password) {
           }, 1800);
     }
     if(userName && password)
-    alert(`Người dùng đã gửi request đăng nhập\n
+    {
+        console.log(`Người dùng đã gửi request đăng nhập\n
         Tên đăng nhập: ${userName}\n
         Mật khẩu: ${password}`);
-  }
+    
+    const meme = document.querySelector('.JS_LOGIN')
+    meme.classList.remove('hide')
+        
+    setTimeout(() => {
+        meme.classList.add('hide');
+    }, 2000);
+
+    setTimeout(() => {
+        window.location.reload();
+    }, 1900);
+
+    }
+}
 
