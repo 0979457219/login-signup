@@ -2,6 +2,7 @@
     background: url(./logo_back.png) no-repeat center center/cover;
     width: 100px;
     height: 100px;
+    margin-bottom: 0.5em;
 
     display: none;
 }
@@ -69,7 +70,7 @@
     .login_logo {
         width: 14em;
         height: 14em;
-        margin-bottom: 0.5em;
+        
     }
 
 } 
