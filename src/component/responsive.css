@@ -1,0 +1,56 @@
+.login_logo {
+    background: url(./logo_back.png) no-repeat center center/cover;
+    width: 100px;
+    height: 100px;
+
+    display: none;
+}
+
+/* both */
+
+@media only screen and (max-width: 1023px) {
+    .container {
+        background: none;
+    }
+    .login_logo {
+        display: block;
+    }
+
+    .back {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+        transform: translateY(-40px);
+        box-shadow: none;
+    }
+
+    .btn_login {
+        width: 90%;
+        background-color: #1A98FF;
+        color: #fff;
+    }
+}
+
+
+
+
+/* phone */
+@media only screen and (max-width: 739px) {
+    .content {
+        width: 100%;
+    }
+}
+
+
+/* table */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .login_logo {
+        width: 14em;
+        height: 14em;
+    }
+
+} 
+
+

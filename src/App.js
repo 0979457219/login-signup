@@ -4,6 +4,8 @@ import Login_signup_completed from "./component/login_signup_completed";
 import './index.css';
 import './component/back.css'
 import './component/login_signup_completed.css'
+import './component/responsive.css'
+
 import './handleSignUp';
 
 

@@ -1,82 +1,28 @@
-
+import { handleBorder } from './handleLogin';
 
 
 export function handleSignUp(userName, password, confirm) {
     if(userName === '')
     {
-      var isRed = false;
-        const userNameElement = document.querySelector('.JSNAME');
-        
-        const intervalId = setInterval(() => {
-            if (isRed) {
-                userNameElement.style.setProperty('border', '2px solid white', 'important');
-            } else {
-                userNameElement.style.setProperty('border', '2px solid red', 'important'); 
-            }
-            isRed = !isRed; 
-          }, 300); 
-        
-          setTimeout(() => {
-            clearInterval(intervalId);
-            userNameElement.style.border = '2px solid white';
-          }, 1800);
+      
+        const userNameElement = document.querySelector('#signUpName');
+        handleBorder(userNameElement)
+
     }
     if( password === '')
     {
-      var isRed2 = false;
-        const passwordElement = document.querySelector('.JSPASS');
-        
-        const intervalId = setInterval(() => {
-            if (isRed2) {
-                passwordElement.style.setProperty('border', '2px solid white', 'important');
-            } else {
-                passwordElement.style.setProperty('border', '2px solid red', 'important'); 
-            }
-            isRed2 = !isRed2; 
-          }, 300); 
-        
-          setTimeout(() => {
-            clearInterval(intervalId);
-            passwordElement.style.border = '2px solid white';
-          }, 1800);
+        const passwordElement = document.querySelector('#signUpPass');
+        handleBorder(passwordElement)
     }
     if ( confirm === '')
     {
-      var isRed3 = false;
-        const confirmElement = document.querySelector('.JSCONFIRM');
-        
-        const intervalId = setInterval(() => {
-            if (isRed3) {
-                confirmElement.style.setProperty('border', '2px solid white', 'important');
-            } else {
-                confirmElement.style.setProperty('border', '2px solid red', 'important'); 
-            }
-            isRed3 = !isRed3; 
-          }, 300); 
-        
-          setTimeout(() => {
-            clearInterval(intervalId);
-            confirmElement.style.border = '2px solid white';
-          }, 1800);
+        const confirmElement = document.querySelector('.confirm');
+        handleBorder(confirmElement)
     }
     if( password !== confirm)
     {
-      var isRed4 = false;
         const confirmElement = document.querySelector('.confirm');
-        
-        const intervalId = setInterval(() => {
-            if (isRed4) {
-                confirmElement.style.setProperty('border', '2px solid white', 'important');
-            } else {
-                confirmElement.style.setProperty('border', '2px solid red', 'important'); 
-            }
-            isRed4 = !isRed4; 
-          }, 300); 
-        
-          setTimeout(() => {
-            clearInterval(intervalId);
-            confirmElement.style.border = '2px solid white';
-          }, 1800);
+        handleBorder(confirmElement)
     }
     else if( userName && confirm && password)
     {
@@ -87,13 +33,13 @@ export function handleSignUp(userName, password, confirm) {
         const meme = document.querySelector('.JS_SIGN_UP')
         meme.classList.remove('hide')
             
-        setTimeout(() => {
-            meme.classList.add('hide');
-        }, 2000);
+        // setTimeout(() => {
+        //     meme.classList.add('hide');
+        // }, 2000);
 
         setTimeout(() => {
           window.location.reload();
-      }, 1900);
+      }, 2000);
         
 
     }

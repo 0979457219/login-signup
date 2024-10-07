@@ -27,7 +27,7 @@ export default function Login() {
   const [confirmPassword, setConfirmPassword] = useState('');
 
 
-  function handleSubmit(event) {
+  function handleLoginSubmit(event) {
     event.preventDefault(); 
     handleLogin(loginUserName, loginPassword);
   }
@@ -42,9 +42,12 @@ export default function Login() {
   
 
     <div className="login">
+
+        <div className='login_logo'></div>
+
         <div className= {`content${isHidden ? ' hide' : ''}`} >
           <p className="content_header" >đăng nhập</p>
-          <form className="fake_content" onSubmit={handleSubmit}>
+          <form className="fake_content" onSubmit={handleLoginSubmit}>
               <input className="content_name" placeholder='Tên đăng nhập' type='text'
               value={loginUserName} 
               onChange={(e) => setLoginUserName(e.target.value)}
@@ -69,31 +72,31 @@ export default function Login() {
         </div>
 
 
-        {/*  */}
+        {/* ĐĂNG KÍ */}
         <div className= {`content${isHidden ? '' : ' hide'}`} >
           <p className="content_header" >đăng ký</p>
           <form className="fake_content" onSubmit={handleRegisterSubmit}>
-            <input className="content_name JSNAME" placeholder='Tên đăng nhập' type='text'
-            value={registerUserName} 
-            onChange={(e) => setRegisterUserName(e.target.value)}
-            /> 
-            <input className="content_pass JSPASS" placeholder='Mật khẩu' type='password'
-            value={registerPassword}
-            onChange={(e) => setRegisterPassword(e.target.value)}
-            /> 
-            <input className="content_pass confirm JSCONFIRM" placeholder='Nhập lại mật khẩu' type='password'
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            />
-            <div className="content_row">
-              <p className="content-desc" >Bạn đã có tài khoản?</p>
-              <button className="btn_change" onClick={changeContent} type="button">
-                <p>Đăng nhập</p>
-              </button>
-            </div>
+              <input className="content_name" id='signUpName' placeholder='Tên đăng nhập' type='text'
+              value={registerUserName} 
+              onChange={(e) => setRegisterUserName(e.target.value)}
+              /> 
+              <input className="content_pass" id='signUpPass' placeholder='Mật khẩu' type='password'
+              value={registerPassword}
+              onChange={(e) => setRegisterPassword(e.target.value)}
+              /> 
+              <input className="content_pass confirm" placeholder='Nhập lại mật khẩu' type='password'
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+              <div className="content_row">
+                <p className="content-desc" >Bạn đã có tài khoản?</p>
+                <button className="btn_change" onClick={changeContent} type="button">
+                  <p>Đăng nhập</p>
+                </button>
+              </div>
 
-            <button className="btn_login" type="submit" >Đăng ký</button>
-            </form>
+              <button className="btn_login" type="submit" >Đăng ký</button>
+          </form>
 
         </div>
 

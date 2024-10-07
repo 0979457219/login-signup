@@ -14,7 +14,7 @@
 }
 
 .message_popup {
-    animation: modalABC ease 0.4s;
+    animation: fadeInPopUp ease 0.4s;
 
     
 }
@@ -25,7 +25,7 @@
 
 }
 
-@keyframes modalABC{
+@keyframes fadeInPopUp{
     from {
         opacity: 0;
         transform: scale(0);
